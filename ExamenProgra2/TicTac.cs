@@ -95,7 +95,7 @@ namespace ExamenProgra2
                 }
                 else
                 {
-                    Console.Write("Numero Invalido, vuelve a intentarlo: ");
+                    Console.Write("Numero Invalido, perdiste tu oportunidad: ");
                 }
                 mostrarCeldas();
 

@@ -11,6 +11,7 @@ namespace ExamenProgra2
         public static  int incluirElemento()
         {
             Console.Write("Es tu turno: ");
+            Console.WriteLine("Escoge un numero del (1-9): ")
             int posicion = int.Parse(Console.ReadLine());
             return posicion;
         }
