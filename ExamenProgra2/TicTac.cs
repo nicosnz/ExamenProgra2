@@ -11,7 +11,7 @@ namespace ExamenProgra2
         private string[] fila1 = { "*", "*", "*" };
         private string[] fila2 = { "*", "*", "*" };
         private string[] fila3 = { "*", "*", "*" };
-        List<int> entradaUsuario = new List<int>();
+        private List<int> entradaUsuario = new List<int>();
 
         public int adversario()
         {
@@ -56,15 +56,11 @@ namespace ExamenProgra2
                     for (int i = 0; i < fila1.Length; i++)
                     {
                         
-                        if(i == posicion && fila1[i] != "O" || fila1[i]!="X")
+                        if(i == posicion)
                         {
                             fila1[i] = "X";
                         }
-                        else
-                        {
-                            Console.WriteLine("Posicion ya ocupada, perdiste tu intento");
-                            break;
-                        }
+                        
 
                     }
                 }
@@ -74,14 +70,11 @@ namespace ExamenProgra2
                     for (int i = 0; i < fila2.Length; i++)
                     {
 
-                        if (i == posicion && fila2[i] != "O" || fila2[i] != "X")
+                        if (i == posicion)
                         {
                             fila2[i] = "X";
                         }
-                        else
-                        {
-                            Console.WriteLine("Posicion ya ocupada, perdiste tu intento");
-                        }
+                        
 
                     }
                 }
@@ -92,14 +85,11 @@ namespace ExamenProgra2
                     for (int i = 0; i < fila3.Length; i++)
                     {
 
-                        if (i == posicion && fila3[i] != "O" || fila3[i] != "X")
+                        if (i == posicion )
                         {
                             fila3[i] = "X";
                         }
-                        else
-                        {
-                            Console.WriteLine("Posicion ya ocupada, perdiste tu intento");
-                        }
+                        
 
                     }
                 }
